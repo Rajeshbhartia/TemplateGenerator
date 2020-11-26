@@ -1,0 +1,241 @@
+{
+    "home_silder": {
+        "name": "home_silder",
+        "columns": {
+            "items": {
+                "name": "items",
+                "is_nullable": false,
+                "default_value": null,
+                "data_type": "char",
+                "field_type": "list",
+                "reference": "list_template_1",
+                "opt": {}
+            }
+        }
+    },
+    "home_template_1": {
+        "name": "home_template_1",
+        "opt": {
+            "label": "Home Template"
+        },
+        "columns": {
+            "image": {
+                "name": "image",
+                "is_nullable": false,
+                "default_value": null,
+                "data_type": "char",
+                "field_type": "image",
+                "opt": {}
+            },
+            "title": {
+                "name": "title",
+                "is_nullable": false,
+                "default_value": null,
+                "data_type": "char",
+                "field_type": "text",
+                "opt": {}
+            },
+            "content": {
+                "name": "content",
+                "is_nullable": false,
+                "default_value": null,
+                "data_type": "char",
+                "field_type": "textarea",
+                "opt": {}
+            },
+            "button": {
+                "name": "button",
+                "field_type": "button",
+                "opt": {}
+            }
+        }
+    },
+    "count_template": {
+        "name": "count_template",
+        "columns": {
+            "items": {
+                "name": "items",
+                "is_nullable": false,
+                "default_value": null,
+                "data_type": "char",
+                "field_type": "list",
+                "reference": "list_template_3"
+            }
+        }
+    },
+    "home_template_2": {
+        "name": "home_template_2",
+        "columns": {
+            "image": {
+                "name": "image",
+                "is_nullable": false,
+                "default_value": null,
+                "data_type": "char",
+                "field_type": "text"
+            },
+            "background": {
+                "name": "background",
+                "is_nullable": false,
+                "default_value": null,
+                "data_type": "char",
+                "field_type": "text"
+            },
+            "title": {
+                "name": "title",
+                "default_value": null,
+                "is_nullable": false,
+                "data_type": "char(32)",
+                "field_type": "text"
+            },
+            "content_1": {
+                "name": "content_1",
+                "default_value": null,
+                "is_nullable": false,
+                "data_type": "char(32)",
+                "field_type": "text"
+            },
+            "content_2": {
+                "name": "content_2",
+                "default_value": null,
+                "is_nullable": false,
+                "data_type": "char(32)",
+                "field_type": "text"
+            },
+            "icon": {
+                "name": "icon",
+                "is_nullable": false,
+                "default_value": null,
+                "data_type": "char",
+                "field_type": "text"
+            },
+            "items": {
+                "name": "items",
+                "is_nullable": false,
+                "default_value": null,
+                "data_type": "char",
+                "field_type": "list",
+                "reference": "list_template_4"
+            }
+        }
+    },
+    "feature_template": {
+        "name": "feature_template",
+        "columns": {
+            "title": {
+                "name": "title",
+                "is_nullable": false,
+                "default_value": null,
+                "data_type": "char",
+                "field_type": "text"
+            },
+            "items": {
+                "name": "items",
+                "field_type": "list",
+                "reference": "list_template_2"
+            },
+            "button": {
+                "name": "button",
+                "field_type": "button"
+            }
+        }
+    },
+    "sliding_template": {
+        "name": "sliding_template",
+        "columns": {
+            "title": {
+                "name": "title",
+                "is_nullable": false,
+                "default_value": null,
+                "data_type": "char",
+                "field_type": "text"
+            },
+            "items": {
+                "name": "items",
+                "field_type": "list",
+                "reference": "list_template_2"
+            }
+        }
+    },
+    "list_template_1": {
+        "name": "list_template_1",
+        "columns": {
+            "title": {
+                "name": "title",
+                "is_nullable": false,
+                "default_value": null,
+                "data_type": "char",
+                "field_type": "text",
+                "opt": {}
+            },
+            "desc": {
+                "name": "desc",
+                "is_nullable": false,
+                "default_value": null,
+                "data_type": "char",
+                "field_type": "text",
+                "opt": {}
+            },
+            "button": {
+                "name": "button",
+                "field_type": "button",
+                "opt": {}
+            }
+        }
+    },
+    "list_template_2": {
+        "name": "list_template_2",
+        "columns": {
+            "name": {
+                "name": "name",
+                "is_nullable": false,
+                "default_value": null,
+                "data_type": "char",
+                "field_type": "text"
+            },
+            "desc": {
+                "name": "desc",
+                "is_nullable": false,
+                "default_value": null,
+                "data_type": "char",
+                "field_type": "text"
+            },
+            "image": {
+                "name": "image",
+                "is_nullable": false,
+                "default_value": null,
+                "field_type": "image"
+            }
+        }
+    },
+    "list_template_3": {
+        "name": "Home Counter",
+        "columns": {
+            "count_title": {
+                "name": "count_title",
+                "default_value": null,
+                "is_nullable": false,
+                "data_type": "char(32)",
+                "field_type": "text"
+            },
+            "count_value": {
+                "name": "count_value",
+                "default_value": null,
+                "is_nullable": false,
+                "data_type": "int(10) unsigned",
+                "field_type": "number"
+            }
+        }
+    },
+    "list_template_4": {
+        "name": "Home Template 2",
+        "columns": {
+            "list_item": {
+                "name": "list_item",
+                "default_value": null,
+                "is_nullable": false,
+                "data_type": "char(32)",
+                "field_type": "text"
+            }
+        }
+    }
+}
